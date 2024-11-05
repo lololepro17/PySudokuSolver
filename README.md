@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ## Utilisation 
 
-- CChaque module peut être testé séparément en changeant de branche :
+- Chaque module peut être testé séparément en changeant de branche :
 
 ```bash
 git checkout nom_de_la_branche
