@@ -1,6 +1,6 @@
 # README de la branche documentation
 
-##Titre : Documentation du Projet
+## Titre : Documentation du Projet
 
 **Objectif** : Rassembler toutes les informations nécessaires pour comprendre et contribuer au projet.
 
