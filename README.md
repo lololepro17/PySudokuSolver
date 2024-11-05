@@ -1,4 +1,5 @@
 # README de la branche `affichage-interface`
+
 ## Titre : Affichage et Interface
 
 **Objectif** : Ce module permet de visualiser la grille et les étapes de résolution dans une interface simple, que ce soit dans le terminal ou avec une interface graphique de base.
