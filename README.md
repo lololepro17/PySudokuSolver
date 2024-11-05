@@ -1,6 +1,6 @@
-# **README de la branche lecture-validation**
+# **README de la branche `lecture-validation`**
 
-## Titre : Lecture et Validation des Données d’Entrée
+## Titre : Lecture et Validation des Données d'Entrée
 
 **Objectif** : Ce module a pour but de charger la grille de sudoku depuis un fichier ou une entrée utilisateur, et de vérifier que la grille est bien formatée et valide.
 
