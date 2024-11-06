@@ -10,6 +10,6 @@ def load_grid(nom_fichier):
 
 def afficher_grille(grille):
     for ligne in grille:
-        print(" ".join(str(val) if val != 0 else "." for val in ligne)) 
+        print(" ".join(str(val) if val != 0 else "." for val in ligne)) # If have val print val else print a '.' for empty.
 
-afficher_grille(load_grid("empty_grid.json"))
+# afficher_grille(load_grid("empty_grid.json"))
