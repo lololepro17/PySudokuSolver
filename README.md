@@ -8,9 +8,9 @@
 
 1. Choix de l’algorithme :
 
-- Utiliser un algorithme de backtracking ou une autre méthode pour résoudre la grille.
+- Utiliser un algorithme de backtracking et récursivité pour résoudre la grille.
 
-2. Optimisation :
+2.Optimisation :
 
 - Optimiser l’algorithme pour qu’il résolve les grilles rapidement.
 - Gérer les cas sans solution en ajoutant une détection des grilles non résolvables.
@@ -22,4 +22,4 @@
 
 **Notes** :
 
-Rien pour l'instant
+Rien à dire pour l'instant
