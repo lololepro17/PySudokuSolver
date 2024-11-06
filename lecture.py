@@ -1,15 +1,37 @@
 import json
 
 def save_grid(grille, nom_fichier):
+    """Save grid with the name 'nom_fichier'."""
     with open(nom_fichier, 'w') as f: # Open file with permissions of write.
         json.dump(grille, f)
 
+
 def load_grid(nom_fichier):
+    """Load the grid."""
     with open(nom_fichier, 'r') as f: # Open file with permission of read.
         return json.load(f)
+    
+# load_grid("empty_grid.json")
+
 
 def afficher_grille(grille):
+    """Post a grid."""
     for ligne in grille:
         print(" ".join(str(val) if val != 0 else "." for val in ligne)) # If have val print val else print a '.' for empty.
 
 # afficher_grille(load_grid("empty_grid.json"))
+
+def est_valide(grille, row, col, valeur):
+    """Check to find if the grid load is good. Return a bool of the result"""
+    if valeur in grille[row]: # Check the row
+        return False
+    
+    if valeur in (grille[i][col] for i in range(9)): # Check the column
+        return False
+    
+    start_row, start_col = 3 * (row // 3), 3 * (col // 3) #Check a bloc of 3*3
+    for i in range(3):
+        for j in range(3):
+            if grille[start_row + i][start_col + j] == valeur:
+                return False
+    return True
