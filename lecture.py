@@ -62,3 +62,20 @@ def afficher_bloc(grid,row,col):
             if grid[start_row + i][start_col + j] == valeur:
                 return False
     return True
+
+
+def bloc(S, i, j):
+    # Start
+    row_start = (i // 3) * 3
+    col_start = (j // 3) * 3
+    
+    chiffres_bloc = [] # Init por stocker les valeur du bloc 
+    
+    # Parcourir les 3x3 cases du bloc
+    for r in range(row_start, row_start + 3):
+        for c in range(col_start, col_start + 3):
+            if S[r][c] != 0:  # Ignorer les zéros
+                chiffres_bloc.append(S[r][c])
+    return chiffres_bloc
+
+print(bloc(grid,3,4))
