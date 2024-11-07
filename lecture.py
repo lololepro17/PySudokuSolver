@@ -11,7 +11,7 @@ def load_grid(nom_fichier):
     with open(nom_fichier, 'r') as f: # Open file with permission of read.
         return json.load(f)
     
-# load_grid("empty_grid.json")
+grid = load_grid("empty_grid.json")
 
 
 def afficher_grille(grille):
@@ -33,5 +33,32 @@ def est_valide(grille, row, col, valeur):
     for i in range(3):
         for j in range(3):
             if grille[start_row + i][start_col + j] == valeur:
+                return False
+    return True
+
+
+def afficher_ligne(grille,n):
+    """Affiche une ligne demander (n)."""
+    i = 0
+    for ligne in grille:
+        i += 1
+        if i == n:
+            return ligne
+
+# print(afficher_ligne(grid,3))
+
+def afficher_column(grid,n):
+    col = []
+    for i in range(9):
+        col.append(grid[i][n])
+    return col
+
+print(afficher_column(grid,4))
+
+def afficher_bloc(grid,row,col):
+    start_row, start_col = 3 * (row // 3), 3 * (col // 3) #Check a bloc of 3*3
+    for i in range(3):
+        for j in range(3):
+            if grid[start_row + i][start_col + j] == valeur:
                 return False
     return True
