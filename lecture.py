@@ -11,7 +11,7 @@ def load_grid(nom_fichier):
     with open(nom_fichier, 'r') as f: # Open file with permission of read.
         return json.load(f)
     
-grid = load_grid("empty_grid.json")
+grid = load_grid("grid.json")
 
 
 def afficher_grille(grille):
@@ -53,7 +53,7 @@ def afficher_column(grid,n):
         col.append(grid[i][n])
     return col
 
-print(afficher_column(grid,4))
+# print(afficher_column(grid,4))
 
 def afficher_bloc(grid,row,col):
     start_row, start_col = 3 * (row // 3), 3 * (col // 3) #Check a bloc of 3*3
