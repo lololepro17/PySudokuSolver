@@ -20,6 +20,8 @@
 - Niveau 4 : Algorithme de backtracking de base.
 - Niveau 5 : Optimisations avancées (utilisation de techniques de propagation des contraintes, etc.).
 
-**Notes** :
+**Participant** :
 
-Rien à dire pour l'instant
+- *Erevan Penaud*
+- *Aïssa hamou*
+- *Virgil Thomas-Derdeb*
